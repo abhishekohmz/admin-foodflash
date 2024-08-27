@@ -1,0 +1,352 @@
+.categories{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.categories a{
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    display: flex;
+    gap: 4px;
+    align-items: last baseline;
+    border: 1px solid gray;
+    width: max-content;
+    padding: 2px;
+    box-shadow: 0 0 3px;
+}
+.categories a img{
+    width: 20px;
+}
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product-data {
+    width: 80%;
+}
+
+.product-name-title,
+.product-data2 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.categorydisplay-itemfield {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.categorydisplay-itemfield .img-label {
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categorydisplay-itemfield input {
+    height: 40px;
+}
+
+.categorydisplay-itemfield img {
+    width: 100%;
+}
+
+.product-img-price {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.product-description,
+.product-price-pack {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.product-description textarea {
+    height: 200px;
+}
+
+.categroy-price {
+    display: flex;
+    gap: 20px;
+}
+
+.show-products {
+    padding-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 100px;
+}
+
+.show-products h1 {
+    text-align: center;
+}
+
+.product-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.product-btn {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.product-btn button {
+    width: 300px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    background: rgba(102, 102, 238, 0.491);
+    border: 1px solid gray;
+}
+
+.admincard-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.admincard-body button {
+    font-size: 14px;
+    box-shadow: 0 0 2px;
+}
+
+.admincard-body button:hover,
+.product-btn button:hover {
+    transform: scale(1.01);
+    transition: 0.2s;
+    box-shadow: 0px 0px 2px black;
+}
+
+.show-products-data {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.show-products-data {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.show-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.show-products .card-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.show-products .admin-card {
+    margin: 0px;
+    border: 1px solid gray;
+    padding: 10px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 0 2px;
+}
+.admincard-body .remove-btn{
+    background: rgb(248, 115, 115);
+    border: none;
+    outline: none;
+    padding: 2px;
+} 
+.admincard-body .dailydeal-btn,
+.admincard-body .flashsale-btn{
+    background: #87ccf7;
+    border: none;
+    outline: none;
+    padding: 2px;
+}
+
+
+
+.show-products .admin-card img {
+    width: 60%;
+    height: 100px;
+}
+.show-products .admin-card h5{
+    margin-bottom: 0px;
+}
+
+.show-products .prices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+.show-products .prices .old_price{
+    text-decoration: line-through red;
+}
+
+@media screen and (max-width:992px) {
+
+    .show-products .prices p{
+        font-size: 12px;
+    }
+    .product-description textarea {
+        height: 150px;
+        font-size: 13px;
+    }
+
+    .show-products .admin-card img {
+        width: 60%;
+        height: 80px;
+    }
+
+    .product-btn button {
+        width: 100%;
+    }
+
+    .categorydisplay-itemfield input {
+        height: 30px;
+        font-size: 13px;
+    }
+    .categorydisplay-itemfield label{
+        font-size: 15px;
+    }
+
+    .product-name-title,
+    .product-data2 {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .categorydisplay-itemfield .img-label {
+        width: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .admincard-body {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .admincard-body button {
+        font-size: 10px;
+    }
+
+    .show-products .card-body h5 {
+        font-size: 10px;
+    }
+
+    .show-products .admin-card h5 {
+        font-size: 10px;
+    }
+
+    .show-products-data h1 {
+        font-size: 24px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .show-products {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        padding-left: 50px;
+        margin-right: 0px;
+        padding-right: 50px;
+        gap: 10px;
+    }
+
+    .categories{
+        padding-top: 20px;
+    }
+    .categories a{
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .categories a img{
+        width: 15px;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    .show-products .prices p{
+        font-size: 10px;
+    }
+
+    .product-btn button {
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 12px;
+        font-weight: 500;
+        background: rgba(102, 102, 238, 0.491);
+        border: 1px solid gray;
+    }
+
+    .product-description textarea {
+        height: 100px;
+        font-size: 10px;
+    }
+
+    .categorydisplay-itemfield input {
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .show-products .admin-card img {
+        width: 60%;
+        height: 60px;
+    }
+
+    .categorydisplay-itemfield label{
+        font-size: 13px;
+    }
+
+    .categorydisplay-itemfield .img-label {
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .show-products .card-body h5 {
+        font-size: 6px;
+    }
+
+    .show-products {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .show-products-data h1 {
+        font-size: 18px;
+    }
+
+}

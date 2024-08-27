@@ -1,0 +1,130 @@
+.orders {
+    padding: 20px 100px 80px;
+}
+
+.orders-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 1fr 1fr;
+}
+
+.orders-grid p {
+    font-size: 13px;
+}
+
+.grid-header {
+    display: contents;
+    font-weight: bold;
+}
+
+.grid-header>div {
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+}
+
+.grid-item {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.product_image_name {
+    display: flex;
+    gap: 30px;
+}
+
+.grid-item .product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    display: block;
+}
+
+@media screen and (max-width:992px) {
+
+    .orders-grid p {
+        font-size: 10px;
+        width: max-content;
+    }
+
+    .grid-item {
+        padding: 3px;
+    }
+
+    .grid-header {
+        font-size: 13px;
+    }
+
+    .product_image_name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-item .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .grid-item h5 {
+        font-size: 10px;
+    }
+
+    .grid-header>div {
+        padding: 5px;
+    }
+
+    .orders {
+        padding: 20px 50px 80px;
+    }
+
+    .orders h1{
+        font-size: 24px;
+    }
+
+    .product_image_name {
+        display: flex;
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    .grid-header>div {
+        padding: 2px;
+    }
+
+    .product-image {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        display: block;
+    }
+    .grid-item h5 {
+        font-size: 8px;
+    }
+
+    .orders-grid p {
+        font-size: 6px;
+        font-weight: bold;
+    }
+    .grid-header {
+        font-size: 8px;
+    }
+
+    .orders h1{
+        font-size: 18px;
+    }
+    .orders {
+        padding: 20px 10px 80px;
+    }
+}

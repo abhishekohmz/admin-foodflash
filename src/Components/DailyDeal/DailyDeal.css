@@ -1,0 +1,105 @@
+.dailydeal {
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 100vh;
+}
+
+.dailydeal-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.dailydeal-h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+
+.dailydeal .card-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dailydeal .admin-card {
+    margin: 0px;
+    border: 1px solid gray;
+    padding: 10px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 0 2px;
+}
+.dailydeal .admin-card img{
+    width: 60%;
+}
+.dailydeal-data .admin-btn button {
+    background: rgba(255, 0, 0, 0.382);
+    outline: none;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+@media screen and (max-width:992px) {
+
+    .dailydeal .card-body h5 {
+        font-size: 10px;
+    }
+
+    .dailydeal-data .admin-btn button {
+        background: rgba(255, 0, 0, 0.382);
+        outline: none;
+        padding: 5px;
+        font-size: 10px;
+        border-radius: 10px;
+        border: 1px solid gray;
+    }
+
+    .dailydeal-h1{
+        font-size: 24px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .dailydeal-data {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    .dailydeal .card-body h5 {
+        font-size: 6px;
+    }
+
+    .dailydeal-data .admin-btn button {
+        background: rgba(255, 0, 0, 0.382);
+        outline: none;
+        padding: 5px;
+        font-size: 8px;
+        border-radius: 10px;
+        border: 1px solid gray;
+    }
+
+    .dailydeal-data {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+.dailydeal-h1{
+    font-size: 18px;
+}
+    .dailydeal {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}

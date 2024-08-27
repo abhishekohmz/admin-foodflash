@@ -1,0 +1,40 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-right: 30px;
+    box-shadow: 0px 1px 6px -2px black;
+    margin-bottom: 1px;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+.navbar img{
+    width: 80px;
+}
+.navbar h1{
+    color:#1a567b;
+}
+
+@media screen and (max-width:992px) {
+    .navbar{
+        padding-top: 10px;
+        padding-bottom: 3px;
+    }
+    .navbar img{
+        width: 50px;
+    }
+    .navbar h1{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .navbar h1{
+        font-size: 18px;
+    }
+}
